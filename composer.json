@@ -1,0 +1,24 @@
+{
+    "name": "zdenekdrahos/php-mocks",
+    "authors": [
+        {
+            "name": "Zdenek Drahos",
+            "email": "drahoszdenek@gmail.com"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpMocks\\": "src/"
+        },
+        "files": ["src/functions.php"]
+    },
+    "require": {
+        "phpunit/phpunit": "*",
+        "mockery/mockery": "*",
+        "phake/phake": "*",
+        "janmarek/mockista": "*"
+    }
+}
