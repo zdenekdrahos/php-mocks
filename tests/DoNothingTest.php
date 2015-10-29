@@ -39,6 +39,7 @@ class DoNothingTest extends \PHPUnit_Framework_TestCase
     {
         $d = $this->getMock(Dependency::class);
         $this->shouldDoNothing($d);
+        $this->fail('Test always passes when method is not expected - https://github.com/sebastianbergmann/phpunit-mock-objects/issues/65');
     }
 
     /** @group mockista */
