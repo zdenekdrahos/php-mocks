@@ -2,7 +2,7 @@
 
 namespace PhpMocks;
 
-class Test extends \PHPUnit_Framework_TestCase
+class DoSomethingTest extends \PHPUnit_Framework_TestCase
 {
     /** @group nomock */
     public function testNoMock()
