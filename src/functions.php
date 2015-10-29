@@ -9,5 +9,6 @@ function doSomething(Dependency $d)
 
 function doNothing(Dependency $d)
 {
+    $d->unexpectedCall();
     return 42;
 }

@@ -55,3 +55,45 @@ Expected method PhpMocks\Dependency#1::expectedCall() should be called exactly o
 ./vendor/janmarek/mockista/Mockista/Registry.php:103
 ./tests/Test.php:54
 ```
+
+
+## Call unexpected method in production code for mock without expectations
+
+### Prophecy
+
+```php
+test passed :(
+```
+
+### Mockery
+
+```php
+BadMethodCallException: Method Mockery_0_PhpMocks_Dependency::unexpectedCall() does not exist on this mock object
+
+./src/functions.php:12
+./tests/DoNothingTest.php:25
+
+```
+
+### Phake
+
+```php
+test passed :(
+```
+
+### PhpUnit
+
+```php
+test passed :(
+```
+
+### Mockista
+
+```php
+Unexpected call in mock PhpMocks\Dependency#1::unexpectedCall(), args:
+
+./vendor/janmarek/mockista/Mockista/Mock.php:98
+./vendor/janmarek/mockista/Mockista/Mock.php:124
+./src/functions.php:12
+./tests/DoNothingTest.php:48
+```
