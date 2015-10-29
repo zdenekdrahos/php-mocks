@@ -9,4 +9,5 @@ function doSomething(Dependency $d)
 
 function doNothing(Dependency $d)
 {
+    return 42;
 }
