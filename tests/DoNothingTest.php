@@ -15,6 +15,7 @@ class DoNothingTest extends \PHPUnit_Framework_TestCase
     public function testProphecy()
     {
         $d = $this->prophesize(Dependency::class);
+        $d->unexpectedCall()->shouldNotBeCalled();
         $this->shouldDoNothing($d->reveal());
     }
 

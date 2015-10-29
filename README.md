@@ -65,6 +65,17 @@ Expected method PhpMocks\Dependency#1::expectedCall() should be called exactly o
 test passed :(
 ```
 
+#### `$d->unexpectedCall()->shouldNotBeCalled();`
+
+```
+Some predictions failed:
+  Double\PhpMocks\Dependency\P1:
+    No calls expected that match:
+      Double\PhpMocks\Dependency\P1->unexpectedCall()
+    but 1 was made:
+      - unexpectedCall() @ src/functions.php:12
+```
+
 ### Mockery
 
 ```php
@@ -84,7 +95,6 @@ test passed :(
 #### `\Phake::verifyNoOtherInteractions($d);`
 
 ```php
-PhpMocks\DoNothingTest::testPhake
 Failed asserting that Expected no interaction with mock
 Invocations:
   PhpMocks\Dependency->unexpectedCall().
