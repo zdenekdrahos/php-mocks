@@ -1,4 +1,14 @@
 
+# Comparing PHP mocking frameworks
+
+Experiments used for defining issue [Explicit distinction between dummy and mock #223](https://github.com/phpspec/prophecy/issues/223)
+
+* [Prophecy](https://github.com/phpspec/prophecy)
+* [Mockery](https://github.com/padraic/mockery)
+* [Phake](https://github.com/mlively/Phake)
+* [PhpUnit](https://github.com/sebastianbergmann/phpunit-mock-objects)
+* [Mockista](https://github.com/janmarek/mockista)
+
 ## Expected method should be called
 
 ### Prophecy
