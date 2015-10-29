@@ -31,6 +31,7 @@ class DoNothingTest extends \PHPUnit_Framework_TestCase
     {
         $d = \Phake::mock(Dependency::class);
         $this->shouldDoNothing($d);
+        \Phake::verifyNoOtherInteractions($d);
     }
 
     /** @group phpunit */

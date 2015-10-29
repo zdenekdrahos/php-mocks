@@ -81,6 +81,20 @@ BadMethodCallException: Method Mockery_0_PhpMocks_Dependency::unexpectedCall() d
 test passed :(
 ```
 
+#### `\Phake::verifyNoOtherInteractions($d);`
+
+```php
+PhpMocks\DoNothingTest::testPhake
+Failed asserting that Expected no interaction with mock
+Invocations:
+  PhpMocks\Dependency->unexpectedCall().
+
+./vendor/phake/phake/src/Phake/Client/PHPUnit.php:56
+./vendor/phake/phake/src/Phake.php:271
+./tests/DoNothingTest.php:34
+
+```
+
 ### PhpUnit
 
 ```php
